@@ -29,7 +29,7 @@ const Header = (props: Props) => {
               </Button>
             </>
           ) : (
-            <Button variant="link" onClick={() => signIn()}>
+            <Button variant="link"   onClick={async () =>  await signIn()}>
               Sign In
             </Button>
           )}
